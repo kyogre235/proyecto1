@@ -11,9 +11,9 @@ import java.text.Normalizer;
  */
 public class Linea implements Comparable<Linea> {
     /** String que guarda la linea deseada */    
-    protected String linea;
+    private String linea;
     /** version de la linea guardada en formato plano */
-    protected String lineaPlana;
+    private String lineaPlana;
     
     /**
      * metodo constructor de la clase Linea,
@@ -26,9 +26,19 @@ public class Linea implements Comparable<Linea> {
         lineaPlana = lineaPlana.toLowerCase().replaceAll("[^a-z]", "");
 
     }
-
-    public String toString(){
+    /**
+     * metodo que regresa la cadena dentro de Linea
+     * @return la cadena dentro de Linea
+     */
+    public String getLineaPlana(){
         return lineaPlana;
+    }
+
+    public String getLinea(){
+        return linea;
+    }
+    public String toString(){
+        return linea;
     }
     /**
      * Compara la Linea que invoca el metodo con otra Linea
@@ -38,6 +48,8 @@ public class Linea implements Comparable<Linea> {
      */
     @Override public int compareTo(Linea linea){
         //metodo por implementar
-        return 0;
+        //return temporal
+        return this.lineaPlana.compareTo(linea.getLineaPlana());
+        
     }
 }
