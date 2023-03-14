@@ -14,8 +14,8 @@ public class Proyecto1{
                
             p.argumentos(args1);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println(args1.toString());
-            //p.argumentos(args1, br);
+            
+            p.argumentos(args1);
         }
 
     }
