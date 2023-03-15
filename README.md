@@ -16,4 +16,30 @@ $ mvn install
 ```
 $ java -jar target/proyecto.jar Archivo.txt
 ```
+donde `Archivo.txt` puede ser un archivo de texto cualquiera y puede ser de cualquier ruta siempre y cuando este sea correcta y puede ser mas de 1
+
+* Tambien podemos ejecutarlo con la entrada estandar de la siguiente forma:
+```
+$ cat Archivo.txt | java -jar target/proyecto.jar
+```
+* podemos colocar las flags "-r" para que el resultado del ordenamiento este invertido o la flag "-o" seguida de una ruta de archivo para guradar el resultado, ambas pueden ser colocadas antes o despues de los archivos a ordenar de la siguiente forma:
+```
+$ java -jar target/proyecto.jar -r Archivo.txt
+```
+```
+$ java -jar target/proyecto.jar Archivo.txt -r
+```
+```
+$ java -jar target/proyecto.jar -o Destino.txt Archivo.txt
+```
+```
+$ java -jar target/proyecto.jar Archivo.txt -o Destino.txt
+```
+```
+cat Archivo.txt | java -jar target/proyecto.jar -r
+```
+```
+cat Archivo.txt | java -jar target/proyecto.jar -o Destino.txt
+```
+o cualquier combinacion que se pueda hacer. siempre y cuando sea valida.
 
