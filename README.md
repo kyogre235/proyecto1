@@ -12,5 +12,8 @@
 ```
 $ mvn install
 ```
-  
+* Una vez compilado, lo ejecutamos con el siguiente comando:
+```
+$ java -jar target/proyecto.jar Archivo.txt
+```
 
