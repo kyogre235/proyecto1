@@ -16,7 +16,7 @@ $ mvn install
 ```
 $ java -jar target/proyecto.jar Archivo.txt
 ```
-donde `Archivo.txt` puede ser un archivo de texto cualquiera y puede ser de cualquier ruta siempre y cuando este sea correcta y puede ser mas de 1
+donde `Archivo.txt` puede ser un archivo de texto cualquiera y puede ser de cualquier ruta siempre y cuando esta sea correcta y puede ser mas de 1
 
 * Tambien podemos ejecutarlo con la entrada estandar de la siguiente forma:
 ```
